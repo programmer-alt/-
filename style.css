@@ -1,3 +1,9 @@
+body{
+    background-image: url('H:/Project/images/canon.jpg') ;
+}
+.container{
+    margin: 0 auto;
+}
 .header{
 display: flex;
 justify-content: center;
@@ -8,7 +14,7 @@ border-style: double;
 border-radius: 40px;
 line-height: 60px;
 text-shadow: 8px 8px rgb(73, 140, 25,0.3);
-animation: header 30s infinite;
+animation: header 10s infinite;
 }
 @keyframes header {
     20%{
@@ -26,4 +32,42 @@ animation: header 30s infinite;
     100%{
         color: darkorchid;
     }
+}
+.hi{
+    font-size: 30px;
+
+}
+.men, .girl {
+    font-size: 25px;
+    font-family: 'Tilt Prism', cursive;
+    display: inline-block;
+    line-height: 20px;
+}
+.btn-men {
+   margin-left: 40px;
+   width: 400px;
+   color: transparent;
+}
+.btn-men:focus {
+color: black;
+}
+.btn-men:hover {
+    border-color:goldenrod ;
+}
+.btn-girl {
+    margin-left: 40px;
+    border-bottom-color: aqua ;
+    border-radius: 15px;
+    border-top-color: chartreuse;
+    border-right-color: chartreuse;
+    border-left-color: chartreuse;
+    color: transparent;
+    text-decoration-style: double;
+    width: 400px;
+    }
+.btn-girl:focus {
+    color: black;
+}
+.btn-girl:hover {
+    border-color: rgb(230, 24, 72);
 }
