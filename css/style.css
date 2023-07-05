@@ -1,0 +1,91 @@
+body{
+    background-image: url('H:/Project/images/canon.jpg');
+    max-width: 1500px;
+}
+.container{
+    margin: 0 auto;
+}
+.header{
+display: flex;
+justify-content: center;
+font-family: 'Kablammo', cursive;
+font-size: larger;
+margin-top: 40px;
+border-style: double;
+border-radius: 40px;
+line-height: 60px;
+text-shadow: 8px 8px rgb(73, 140, 25,0.3);
+animation: header 10s infinite;
+}
+@keyframes header {
+    20%{
+        color: aqua;
+    }
+    40%{
+        color: blue;
+    }
+    60%{
+        color: blueviolet;
+    }
+    80%{
+        color:cyan
+    }
+    100%{
+        color: darkorchid;
+    }
+}
+.hi{
+    font-size: 30px;
+    margin-left: 15px;
+
+}
+.men, .girl {
+    font-size: 25px;
+    font-family: 'Tilt Prism', cursive;
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 32px;
+}
+.btn-men {
+   margin-left: 40px;
+   width: 400px;
+   color: transparent;
+}
+.btn-men:focus {
+color: black;
+}
+.btn-men:hover {
+    border-color:goldenrod ;
+}
+.btn-girl {
+    margin-left: 40px;
+    border-bottom-color: aqua ;
+    border-radius: 15px;
+    border-top-color: chartreuse;
+    border-right-color: chartreuse;
+    border-left-color: chartreuse;
+    color: transparent;
+    text-decoration-style: double;
+    width: 400px;
+    }
+.btn-girl:focus {
+    color: black;
+}
+.btn-girl:hover {
+    border-color: rgb(230, 24, 72);
+}
+.enter-name{
+    font-family: 'Comforter', cursive;
+    
+}
+.text{
+   height: 50px;
+   width: 50px;
+}
+.hiddenText-female{
+    display: none;
+}
+#hiddenText-female,
+#hiddenText-male {
+    display: none;
+}

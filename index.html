@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kablammo&family=Roboto+Condensed&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kablammo&family=Roboto+Condensed&family=Tilt+Prism&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project</title>
@@ -27,5 +30,50 @@
             <button class="btn-girl">Ты обворажительная!</button>
         </div>
     </main>
+    <section class="section">
+        <h3 class="enter-name">
+            Введи любое число и оно возведется в квадрат
+          
+            <input type="text" id="numInput" /> 
+           <button onclick = "square()" >Возвести в квадрат</button>
+           <input type="text" id="output" />
+           
+        </h3>
+    
+        <!-- <script>
+        function square() {
+        var numInput = document.getElementById("numInput").value;
+        var outputElement = document.getElementById("output");
+        var result = Math.pow(parseInt(numInput), 2);
+        outputElement.value = result.toString();
+    }
+    </script> -->
+    <div class="new-rezult">
+    <label style="color: rgb(96, 8, 83);" >Укажите пожалуйста ваш пол</label>
+   <p> <input type="radio" name="gender"  id="male" > Мужской</p> 
+   <p> <input type="radio" name="gender"   id="female"> Женский</p>
+  </div>
+    
+   
+  <label>Введи своё имя</label>
+  <input type="text" id="input1" oninput="mirrowText()" />
+  <button id="selection" >Нажми меня</button>
+  
+  <p id="hiddenText-female">
+    Мы рады, что сногшибательная, очаровательная посетительница по имени
+    <input type="text" id="input2" /> решила зайти на наш сайт
+  </p>
+  
+  <p id="hiddenText-male">
+    Мы рады, что красавчик мужского пола по имени  <input type="text" id="input3" />
+     решил посетить наш сайт
+  </p>
+ 
+
+   <script src="name.js"></script>
+    <script src="add-word.js"></script>
+    <script src="save-selection.js"></script>
+
+     </section>
 </body>
 </html>
