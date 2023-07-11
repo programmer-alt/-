@@ -1,5 +1,6 @@
 body{
-    background-image: url('H:/Project/images/canon.jpg') ;
+    background-image: url('C:/Users/User/Desktop/Project/images/canon.jpg');
+    max-width: 1500px;
 }
 .container{
     margin: 0 auto;
@@ -35,6 +36,7 @@ animation: header 10s infinite;
 }
 .hi{
     font-size: 30px;
+    margin-left: 15px;
 
 }
 .men, .girl {
@@ -42,6 +44,7 @@ animation: header 10s infinite;
     font-family: 'Tilt Prism', cursive;
     display: inline-block;
     line-height: 20px;
+    margin-left: 32px;
 }
 .btn-men {
    margin-left: 40px;
@@ -70,4 +73,60 @@ color: black;
 }
 .btn-girl:hover {
     border-color: rgb(230, 24, 72);
+}
+.enter-name{
+    font-family: 'Comforter', cursive;
+    
+}
+.text{
+   height: 50px;
+   width: 50px;
+}
+.hiddenText-female{
+    display: none;
+}
+#hiddenText-female,
+#hiddenText-male {
+    display: none;
+}
+
+.anim {
+    white-space: nowrap;
+    animation: flow 10s linear;
+    overflow: hidden;
+   }
+
+.forGo {
+    display: flex;
+}
+
+.textSpan {
+    animation: flash 1s infinite;
+  }
+  @keyframes flash {
+    0% {
+      color: rgb(30, 0, 128);
+    }
+    50% {
+      color: rgb(7, 155, 181);
+    }
+    100% {
+      color: rgb(228, 101, 11);
+    }
+  }
+@keyframes flow {
+    0% {
+        width: 0;
+        color: green;
+    }
+    25%, 75% {
+        color: rgb(128, 0, 83);
+    }
+    50% {
+        color: rgb(240, 218, 218);
+    }
+    100% {
+        width: 100%;
+        color: green;
+    }
 }
